@@ -14,6 +14,15 @@ public class PersonalWebsiteApplication {
 		SpringApplication.run(PersonalWebsiteApplication.class, args);
 	}
 
+	@GetMapping("/")
+	public String landingPage() {
+		return """
+					This is the default landing page for the website.
+					
+					Additional functionality to be implemented at a later date.
+				""";
+	}
+
 	@GetMapping("/hello")
 	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return String.format("Hello %s!", name);
