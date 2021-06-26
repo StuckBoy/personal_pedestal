@@ -13,7 +13,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>Personal Website</name>
-	<description>A simple website to serve as a one-stop shop for both personal use, as well as a place to advertise my skills.</description>
+	<description>
+		A simple website to serve as a one-stop shop for both personal use, as
+		well as a place to advertise my skills.
+	</description>
 	<properties>
 		<java.version>16</java.version>
 	</properties>
@@ -28,10 +31,21 @@
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 	</dependencies>
 
